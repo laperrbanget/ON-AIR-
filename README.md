@@ -1,7 +1,12 @@
 # ON AIR
 
+---
+
 ON AIR GDD FILE: https://docs.google.com/document/d/1YrLfIIvYQ_SyDinjL7Z4S7JmM54UP3TFiC9cqnY1-pU/edit?usp=sharing 
 
+ON AIR ITCH.IO PAGE: 
+
+---
 
 A short narrative (horror?) game about a late-night radio operator and the weird listeners.
 
