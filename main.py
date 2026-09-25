@@ -4,9 +4,6 @@ import os
 import json
 import random
 
-# ============================================================
-# DEAD AIR - Step 6: Intro, Endings, Polish
-# ============================================================
 
 WIDTH, HEIGHT = 1280, 720
 FPS = 60
@@ -105,7 +102,7 @@ class DeadAirGame:
         self.intro_typing_index = 0
         self.intro_typing_timer = 0.0
         self.intro_typing_speed = 0.04
-        self.intro_lines_rendered = []  # list of (text, color, size)
+        self.intro_lines_rendered = []  
         self.intro_wait_input = False
 
         # Ending state
@@ -116,12 +113,12 @@ class DeadAirGame:
         self.ending_lines_rendered = []
         self.ending_wait_restart = False
 
-        # Reset untuk restart
+        # Reset restart
         self.reset_game_state()
 
-        self.debug = True
+        self.debug = False
 
-    # --------------------------------------------------------
+    # game state
     def reset_game_state(self):
         """Reset semua state gameplay (bukan intro/ending)."""
         self.game_hour = 0.0
@@ -286,7 +283,7 @@ class DeadAirGame:
             print(f"[music] gagal play {path}: {e}")
             self.now_playing = song
 
-    # --------------------------------------------------------
+    # horror things
     def corrupt_text(self, text, level):
         if level <= 0:
             return text
@@ -319,9 +316,8 @@ class DeadAirGame:
                 chars.insert(i, random.choice(glitch_chars))
         return "".join(chars)
 
-    # --------------------------------------------------------
+
     # INTRO
-    # --------------------------------------------------------
     def update_intro(self, dt):
         if self.intro_wait_input:
             return
@@ -341,10 +337,9 @@ class DeadAirGame:
                 if self.intro_typing_index % 3 == 0:
                     self.play_sfx(SFX_TICK, 0.15)
         else:
-            # Selesai ngetik, tunggu delay
+            # Selesai ngetik delay
             self.intro_timer += dt
             if self.intro_timer >= item.get("delay", 0.5):
-                # Commit line ke rendered
                 self.intro_lines_rendered.append({
                     "text": text,
                     "color": item.get("color", WHITE),
@@ -361,7 +356,7 @@ class DeadAirGame:
     def draw_intro(self):
         self.screen.fill(BLACK)
 
-        # Render lines yang udah selesai
+        # Render lines
         y = 80
         for line in self.intro_lines_rendered:
             font = self.get_intro_font_by_size(line["size"])
@@ -381,8 +376,8 @@ class DeadAirGame:
         self.screen.blit(self.scanline_surface, (0, 0))
         self.screen.blit(self.vignette_surface, (0, 0))
 
+
     def get_intro_font_by_size(self, size):
-        """Font khusus intro — sedikit lebih gede dari gameplay."""
         if not os.path.exists(FONT_PATH):
             # Fallback kalau font ga ada
             if size == "big":
@@ -406,9 +401,7 @@ class DeadAirGame:
         else:
             return self.font_small
 
-    # --------------------------------------------------------
     # ENDING
-    # --------------------------------------------------------
     def start_ending(self, reason):
         self.state = "ending"
         self.ending_reason = reason
@@ -461,7 +454,7 @@ class DeadAirGame:
         title = ending.get("title", "END")
         title_color = tuple(ending.get("title_color", [220, 220, 220]))
 
-        # Title di atas
+        # Title 
         title_surf = self.font_big.render(title, True, title_color)
         self.screen.blit(
             title_surf,
@@ -484,7 +477,7 @@ class DeadAirGame:
                 txt = self.font_mid.render(text, True, tuple(item.get("color", WHITE)))
                 self.screen.blit(txt, (WIDTH // 2 - txt.get_width() // 2, y))
 
-        # Restart prompt
+        # Restart
         if self.ending_wait_restart:
             prompt1 = self.font_small.render("[SPACE] play again", True, AMBER)
             prompt2 = self.font_small.render("[ESC] quit", True, GRAY)
@@ -500,9 +493,8 @@ class DeadAirGame:
         self.screen.blit(self.scanline_surface, (0, 0))
         self.screen.blit(self.vignette_surface, (0, 0))
 
-    # --------------------------------------------------------
-    # GAMEPLAY (sama kayak sebelumnya)
-    # --------------------------------------------------------
+    # GAMEPLAY
+    
     def update(self, dt):
         if self.game_over:
             if self.jumpscare_active:
@@ -939,9 +931,8 @@ class DeadAirGame:
         else:
             self.start_ending(reason)
 
-    # --------------------------------------------------------
     # DRAW
-    # --------------------------------------------------------
+    
     def draw(self):
         if self.state == "intro":
             self.draw_intro()
@@ -1145,13 +1136,13 @@ class DeadAirGame:
         monitor_rect = pygame.Rect(20, 80, 760, 480)
         pygame.draw.rect(self.screen, DARK, monitor_rect)
 
-        # Border tebal (3px) warna amber gelap
+        # Border tebal 
         pygame.draw.rect(self.screen, (120, 90, 20), monitor_rect, 3)
-        # Inner border tipis (1px) lebih terang
+        # Inner border
         inner_rect = monitor_rect.inflate(-6, -6)
         pygame.draw.rect(self.screen, (60, 45, 10), inner_rect, 1)
 
-        # Corner accents (4 sudut kecil)
+        # Corner 
         corner_len = 12
         corner_color = AMBER
         # Top-left
@@ -1324,7 +1315,7 @@ class DeadAirGame:
                  rect.centery - txt.get_height() // 2)
             )
 
-    # --------------------------------------------------------
+    # Input Handling
     def handle_input(self):
         if self.game_over or self.paused:
             return
@@ -1349,7 +1340,7 @@ class DeadAirGame:
             if keys[pygame.K_DOWN]:
                 self.happiness = max(0, self.happiness - 1)
 
-    # --------------------------------------------------------
+    # Run the Game
     def run(self):
         while self.running:
             dt = self.clock.tick(FPS) / 1000.0
