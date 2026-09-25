@@ -1,0 +1,24 @@
+{
+  "survived": {
+    "title": "06:00",
+    "title_color": [80, 255, 120],
+    "lines": [
+      { "text": "You turn off the lights.", "delay": 1.5, "color": [220, 220, 220] },
+      { "text": "You lock the door.", "delay": 1.5, "color": [220, 220, 220] },
+      { "text": "You walk to the parking lot.", "delay": 2.5, "color": [220, 220, 220] },
+      { "text": "", "delay": 1.0 },
+      { "text": "In the car, the radio turns on by itself.", "delay": 2.5, "color": [200, 200, 180] },
+      { "text": "", "delay": 1.5 },
+      { "text": "Frequency 98.7.", "delay": 2.0, "color": [220, 120, 100] },
+      { "text": "Your own voice.", "delay": 3.0, "color": [220, 120, 100] }
+    ]
+  },
+  "off_air": {
+    "title": "OFF-AIR",
+    "title_color": [255, 70, 70],
+    "lines": [
+      { "text": "Broadcast terminated.", "delay": 2.0, "color": [220, 220, 220] },
+      { "text": "Operator not found.", "delay": 2.5, "color": [180, 180, 180] }
+    ]
+  }
+}

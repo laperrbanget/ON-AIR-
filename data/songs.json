@@ -1,0 +1,76 @@
+{
+  "songs": [
+    {
+      "id": "blue_hour",
+      "title": "Blue Hour",
+      "mood": "calm",
+      "color": [80, 140, 220],
+      "desc": "Soft jazz. Late night.",
+      "file": "assets/music/blue_hour.mp3"
+    },
+    {
+      "id": "still_water",
+      "title": "Still Water",
+      "mood": "calm",
+      "color": [100, 180, 200],
+      "desc": "Ambient piano. Peaceful.",
+      "file": "assets/music/still_water.mp3"
+    },
+    {
+      "id": "old_tape",
+      "title": "Fallen Down",
+      "mood": "nostalgia",
+      "color": [200, 160, 90],
+      "desc": "It's like an Old Story that I miss. ",
+      "file": "assets/music/old_tape.mp3"
+    },
+    {
+      "id": "sunday_static",
+      "title": "Home",
+      "mood": "nostalgia",
+      "color": [180, 140, 100],
+      "desc": "The place that we call our own.",
+      "file": "assets/music/sunday_static.mp3"
+    },
+    {
+      "id": "neon_rain",
+      "title": "Neon Rain",
+      "mood": "restless",
+      "color": [220, 80, 160],
+      "desc": "Can't sit still.",
+      "file": "assets/music/neon_rain.mp3"
+    },
+    {
+      "id": "night_drive",
+      "title": "Night Drive",
+      "mood": "restless",
+      "color": [140, 80, 200],
+      "desc": "Dark electro for Empty road.",
+      "file": "assets/music/night_drive.mp3"
+    },
+    {
+      "id": "static_hymn",
+      "title": "Static Hymn",
+      "mood": "strange",
+      "color": [160, 120, 220],
+      "desc": "Choir buried in noise.",
+      "file": "assets/music/static_hymn.mp3"
+    },
+    {
+      "id": "low_frequency",
+      "title": "Low Frequency",
+      "mood": "strange",
+      "color": [120, 100, 160],
+      "desc": "Just below hearing. Waiting.",
+      "file": "assets/music/low_frequency.mp3"
+    },
+    {
+      "id": "silence",
+      "title": "Silence",
+      "mood": "silence",
+      "color": [90, 90, 90],
+      "desc": "Nothing. Just the room.",
+      "file": null
+    }
+  ]
+}

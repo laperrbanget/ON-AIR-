@@ -1,0 +1,73 @@
+{
+  "ambient": [
+    {
+      "hour_min": 0.0,
+      "hour_max": 2.0,
+      "lines": [
+        { "user": "user_4420", "text": "first time tuning in" },
+        { "user": "nightowl", "text": "hey" },
+        { "user": "user_4420", "text": "is this the new guy?" },
+        { "user": "anonymous", "text": "hm" },
+        { "user": "nightowl", "text": "play something slow tonight" },
+        { "user": "static_kid", "text": "..." },
+        { "user": "user_4420", "text": "audio's a bit off tonight" },
+        { "user": "nightowl", "text": "yeah" },
+        { "user": "static_kid", "text": "i like this one" },
+        { "user": "anonymous", "text": "who else is up" },
+        { "user": "nightowl", "text": "just us" },
+        { "user": "user_4420", "text": "the last guy was quieter" }
+      ]
+    },
+    {
+      "hour_min": 2.0,
+      "hour_max": 4.0,
+      "lines": [
+        { "user": "nightowl", "text": "still there, operator?" },
+        { "user": "user_4420", "text": "you changed the song" },
+        { "user": "anonymous", "text": "i didn't hear that one before" },
+        { "user": "static_kid", "text": "who's breathing" },
+        { "user": "nightowl", "text": "ignore that" },
+        { "user": "user_4420", "text": "the last guy played this too" },
+        { "user": "anonymous", "text": "he did" },
+        { "user": "static_kid", "text": "can you hear me" },
+        { "user": "nightowl", "text": "don't answer that" },
+        { "user": "user_4420", "text": "you're doing better than him" },
+        { "user": "anonymous", "text": "for now" }
+      ]
+    },
+    {
+      "hour_min": 4.0,
+      "hour_max": 5.0,
+      "lines": [
+        { "user": "user_4420", "text": "you should keep playing" },
+        { "user": "nightowl", "text": "don't stop" },
+        { "user": "static_kid", "text": "it's quieter when you play" },
+        { "user": "anonymous", "text": "he stopped playing" },
+        { "user": "user_4420", "text": "we heard what happened" },
+        { "user": "nightowl", "text": "keep playing" },
+        { "user": "static_kid", "text": "please" },
+        { "user": "anonymous", "text": "you're almost done" },
+        { "user": "nightowl", "text": "don't look at the door" }
+      ]
+    },
+    {
+      "hour_min": 5.0,
+      "hour_max": 5.5,
+      "lines": [
+        { "user": "user_4420", "text": "..." },
+        { "user": "nightowl", "text": "..." },
+        { "user": "static_kid", "text": "..." }
+      ]
+    },
+    {
+      "hour_min": 5.5,
+      "hour_max": 6.0,
+      "lines": [
+        { "user": "anonymous", "text": "thank you for playing" },
+        { "user": "nightowl", "text": "see you tomorrow" },
+        { "user": "static_kid", "text": "goodnight" },
+        { "user": "user_4420", "text": "same time tomorrow" }
+      ]
+    }
+  ]
+}

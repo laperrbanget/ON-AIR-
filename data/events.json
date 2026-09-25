@@ -1,0 +1,55 @@
+{
+  "events": [
+    {
+      "id": "echo",
+      "hour": 3.2,
+      "type": "echo",
+      "chat_lines": [
+        { "username": "user_anon_22",   "color": [140, 150, 170], "text": "are you there" },
+        { "username": "warm_static",    "color": [190, 170, 140], "text": "are you there" },
+        { "username": "off_band",       "color": [140, 130, 180], "text": "are you there" },
+        { "username": "shortwave_kid",  "color": [130, 150, 160], "text": "are you there" },
+        { "username": "graveyard_shift","color": [130, 160, 150], "text": "are you there" },
+        { "username": "white_noise_fan","color": [180, 150, 170], "text": "are you there" },
+        { "username": "amplitude_74",   "color": [150, 140, 170], "text": "are you there" },
+        { "username": "reel_to_reel",   "color": [190, 170, 130], "text": "are you there" },
+        { "username": "level_0_lobby",  "color": [140, 150, 170], "text": "are you there" }
+      ],
+      "pause_duration": 3.0,
+      "after_chat": [
+        { "username": "reel_to_reel",  "color": [190, 170, 130], "text": "anyway" },
+        { "username": "amplitude_74",  "color": [150, 140, 170], "text": "what was that" },
+        { "username": "level_0_lobby", "color": [140, 150, 170], "text": "nothing" }
+      ],
+      "happiness_delta": -3
+    },
+    {
+      "id": "erase",
+      "hour": 4.15,
+      "type": "erase",
+      "erase_count": 10,
+      "chat_lines": [],
+      "pause_duration": 4.0,
+      "after_chat": [
+        { "username": "level_0_lobby", "color": [140, 150, 170], "text": "sorry about that" },
+        { "username": "warm_static",   "color": [190, 170, 140], "text": "technical issues" }
+      ],
+      "happiness_delta": -5
+    },
+    {
+      "id": "ghost_track",
+      "hour": 4.85,
+      "type": "ghost_track",
+      "ghost_title": "TRACK 10: [unknown]",
+      "ghost_sfx_duration": 5.0,
+      "chat_lines": [
+        { "username": "white_noise_fan","color": [180, 150, 170], "text": "did you hear that" },
+        { "username": "off_band",       "color": [140, 130, 180], "text": "no" },
+        { "username": "level_0_lobby",  "color": [140, 150, 170], "text": "ignore it" }
+      ],
+      "pause_duration": 2.0,
+      "after_chat": [],
+      "happiness_delta": -3
+    }
+  ]
+}

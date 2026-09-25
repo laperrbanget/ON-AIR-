@@ -1,0 +1,147 @@
+{
+  "requests": [
+    {
+      "id": 1, "hour": 0.15, "username": "level_0_lobby", "color": [140, 150, 170],
+      "text": "[REQUEST] evening. first night?",
+      "mood": "calm", "correct": ["blue_hour", "still_water"],
+      "corruption": 0, "delta": 5
+    },
+    {
+      "id": 2, "hour": 0.35, "username": "warm_static", "color": [190, 170, 140],
+      "text": "[REQUEST] play something warm. it's cold out here.",
+      "mood": "nostalgia", "correct": ["old_tape", "sunday_static"],
+      "corruption": 0, "delta": 5
+    },
+    {
+      "id": 3, "hour": 0.55, "username": "graveyard_shift", "color": [130, 160, 150],
+      "text": "[REQUEST] something slow. long night ahead.",
+      "mood": "calm", "correct": ["still_water", "blue_hour"],
+      "corruption": 0, "delta": 5
+    },
+    {
+      "id": 4, "hour": 0.75, "username": "off_band", "color": [140, 130, 180],
+      "text": "[REQUEST] anything nostalgic. remind me of something.",
+      "mood": "nostalgia", "correct": ["old_tape", "sunday_static"],
+      "corruption": 0, "delta": 5
+    },
+    {
+      "id": 5, "hour": 1.0, "username": "level_0_lobby", "color": [140, 150, 170],
+      "text": "[REQUEST] you're doing good. better than the last one.",
+      "mood": "strange", "correct": ["static_hymn", "low_frequency"],
+      "corruption": 1, "delta": 5
+    },
+    {
+      "id": 6, "hour": 1.2, "username": "shortwave_kid", "color": [130, 150, 160],
+      "text": "[REQUEST] do you ever wonder who's listening?",
+      "mood": "strange", "correct": ["low_frequency", "silence"],
+      "corruption": 1, "delta": 5, "silence_bonus": 8
+    },
+    {
+      "id": 7, "hour": 1.45, "username": "reel_to_reel", "color": [190, 170, 130],
+      "text": "[REQUEST] put on something restless. i can't sleep.",
+      "mood": "restless", "correct": ["neon_rain", "night_drive"],
+      "corruption": 1, "delta": 5
+    },
+    {
+      "id": 8, "hour": 1.7, "username": "amplitude_74", "color": [150, 140, 170],
+      "text": "[REQUEST] play whatever you want. i trust you.",
+      "mood": "calm", "correct": ["blue_hour", "still_water"],
+      "corruption": 1, "delta": 5
+    },
+    {
+      "id": 9, "hour": 2.0, "username": "unknown", "color": [200, 140, 130],
+      "text": "[REQUEST] sorry. wrong number.",
+      "mood": "calm", "correct": ["still_water"],
+      "corruption": 1, "delta": 3,
+      "special": true, "event": "phone_call",
+      "pre_text": "[INCOMING CALL — LINE 2]"
+    },
+    {
+      "id": 10, "hour": 2.3, "username": "white_noise_fan", "color": [180, 150, 170],
+      "text": "[REQUEST] something strange. i like the odd ones.",
+      "mood": "strange", "correct": ["static_hymn", "low_frequency"],
+      "corruption": 1, "delta": 5
+    },
+    {
+      "id": 11, "hour": 2.55, "username": "level_0_lobby", "color": [140, 150, 170],
+      "text": "[REQUEST] the last one played something different.\ncan you play what he played?",
+      "mood": "nostalgia", "correct": [],
+      "corruption": 1, "delta": -5,
+      "trap": true, "silence_neutral": true
+    },
+    {
+      "id": 12, "hour": 2.85, "username": "dead_air_regular", "color": [120, 150, 140],
+      "text": "[REQUEST] play something calm. please.",
+      "mood": "calm", "correct": ["still_water", "blue_hour"],
+      "corruption": 2, "delta": 5
+    },
+    {
+      "id": 13, "hour": 3.15, "username": "3am_listener", "color": [180, 170, 160],
+      "text": "[REQUEST] it's getting late. are you tired?\ni can stay up with you.",
+      "mood": "calm", "correct": ["still_water", "blue_hour"],
+      "corruption": 2, "delta": 5
+    },
+    {
+      "id": 14, "hour": 3.4, "username": "dokja_kim", "color": [170, 180, 200],
+      "text": "[REQUEST] do you take requests from anyone?\nor just the ones you like?",
+      "mood": "strange", "correct": ["low_frequency", "silence"],
+      "corruption": 2, "delta": 5
+    },
+    {
+      "id": 15, "hour": 3.65, "username": "level_0_lobby", "color": [140, 150, 170],
+      "text": "[REQUEST] play something restless.\ni can't sit still tonight.",
+      "mood": "restless", "correct": ["neon_rain", "night_drive"],
+      "corruption": 2, "delta": 5
+    },
+    {
+      "id": 16, "hour": 3.9, "username": "off_band", "color": [140, 130, 180],
+      "text": "[REQUEST] the hum is louder tonight.\nplay something over it.",
+      "mood": "strange", "correct": ["static_hymn", "low_frequency"],
+      "corruption": 2, "delta": 5
+    },
+    {
+      "id": 17, "hour": 4.15, "username": "level_0_lobby", "color": [140, 150, 170],
+      "text": "[REQUEST] do you know why he stopped answering?",
+      "mood": "strange", "correct": ["silence"],
+      "corruption": 2, "delta": 8, "wrong_delta": -10
+    },
+    {
+      "id": 18, "hour": 4.35, "username": "4am_regular", "color": [200, 160, 150],
+      "text": "[REQUEST] i can hear you breathing through the mic.\nthat's okay. i like it.",
+      "mood": "strange", "correct": ["silence", "low_frequency"],
+      "corruption": 3, "delta": 5
+    },
+    {
+      "id": 19, "hour": 4.55, "username": "shortwave_kid", "color": [130, 150, 160],
+      "text": "[REQUEST] something old. from before all this.",
+      "mood": "nostalgia", "correct": ["old_tape", "sunday_static"],
+      "corruption": 3, "delta": 5
+    },
+    {
+      "id": 20, "hour": 4.75, "username": "level_0_lobby", "color": [140, 150, 170],
+      "text": "[REQUEST] you should check the door.",
+      "mood": "restless", "correct": ["night_drive"],
+      "corruption": 3, "delta": 5
+    },
+    {
+      "id": 21, "hour": 5.1, "username": "graveyard_shift", "color": [130, 160, 150],
+      "text": "[REQUEST] one more. something quiet.",
+      "mood": "calm", "correct": ["still_water", "blue_hour"],
+      "corruption": 3, "delta": 5
+    },
+    {
+      "id": 22, "hour": 5.5, "username": "level_0_lobby", "color": [140, 150, 170],
+      "text": "[REQUEST] one more. then you can go.\nplay the one you'd play for yourself.",
+      "mood": "free", "correct": ["__any__"],
+      "corruption": 3, "delta": 10,
+      "special": true, "silence_bonus": 15
+    },
+    {
+      "id": 23, "hour": 5.85, "username": "level_0_lobby", "color": [140, 150, 170],
+      "text": "thank you.",
+      "mood": "none", "correct": [],
+      "corruption": 3, "delta": 0,
+      "special": true, "closing": true
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "lines": [
+    { "text": "ON AIR", "delay": 0.8, "color": [255, 176, 0], "size": "big" },
+    { "text": "", "delay": 0.5 },
+    { "text": "station: 98.7 FM", "delay": 0.4, "color": [220, 220, 220], "size": "small" },
+    { "text": "shift: 00:00 — 06:00", "delay": 0.4, "color": [220, 220, 220], "size": "small" },
+    { "text": "operator: you", "delay": 0.6, "color": [220, 220, 220], "size": "small" },
+    { "text": "", "delay": 1.0 },
+    { "text": "the previous operator left without notice.", "delay": 0.8, "color": [200, 200, 180], "size": "mid" },
+    { "text": "some say he laughed through his last shift.", "delay": 0.8, "color": [200, 200, 180], "size": "mid" },
+    { "text": "some say he just... stopped showing up.", "delay": 1.2, "color": [200, 200, 180], "size": "mid" },
+    { "text": "", "delay": 0.8 },
+    { "text": "no one knows why.", "delay": 1.5, "color": [180, 140, 140], "size": "mid" },
+    { "text": "", "delay": 1.0 },
+    { "text": "[press SPACE to begin]", "delay": 0.0, "color": [255, 176, 0], "size": "small", "wait_input": true }
+  ]
+}
