@@ -1,6 +1,6 @@
 # ON AIR
 
----
+
 
 ON AIR GDD FILE: https://docs.google.com/document/d/1YrLfIIvYQ_SyDinjL7Z4S7JmM54UP3TFiC9cqnY1-pU/edit?usp=sharing 
 
@@ -18,9 +18,9 @@ Built with **Python** + **Pygame** for a university project.
 
 You're the night-shift operator at a small radio station. Your shift runs from **00:00 to 06:00**.
 
-Listeners send in song requests through the chat panel. You play the right song for the right mood. Keep the **Happiness meter** high. If it hits zero, you don't make it to morning.
+Listeners send in song requests through the chat panel. You play the right song for the right mood. Keep the **Happiness meter** high. If it hits zero, hmmm?
 
-The previous operator left without notice. No one knows why.
+Previous operators always came up with strange stories… Some just laughed it off, whilst others quit their jobs and were never seen again.
 
 ---
 
