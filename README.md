@@ -4,7 +4,9 @@
 
 ON AIR GDD FILE: https://docs.google.com/document/d/1YrLfIIvYQ_SyDinjL7Z4S7JmM54UP3TFiC9cqnY1-pU/edit?usp=sharing 
 
-ON AIR ITCH.IO PAGE: 
+ON AIR ITCH.IO PAGE: https://laperrbanget.itch.io/on-air
+
+pygame code only playable for windows for now, sorry!
 
 ---
 
